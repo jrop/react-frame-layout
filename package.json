@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "babel -o index.js index-source.js && webpack",
-		"clean": "rm -f ./index.js ./test/index.js",
+    "clean": "rm -f ./index.js ./test/index.js",
     "lint": "eslint index-source.js",
-		"prepublish": "npm run lint && npm run build",
+    "prepublish": "npm run lint && npm run build",
     "test": "npm run build && mocha-phantomjs test/index.html",
     "watch": "babel -w -o index.js index-source.js"
   },
@@ -34,5 +34,5 @@
     "react": "^15.0.2",
     "react-addons-update": "^15.0.2"
   },
-	"repository": "jrop/react-frame-layout"
+  "repository": "jrop/react-frame-layout"
 }
