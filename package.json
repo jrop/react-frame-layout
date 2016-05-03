@@ -1,14 +1,14 @@
 {
-  "name": "react-stack-frame-layout",
-  "version": "1.0.0",
-  "description": "",
+  "name": "react-frame-layout",
+  "version": "0.0.1",
+  "description": "Easily implement stackable layouts in React",
   "main": "index.js",
   "scripts": {
-    "build": "babel -o index.js index-source.js",
-    "build-test": "",
-		"clean": "rm ./index.js ./test/index.js",
+    "build": "babel -o index.js index-source.js && webpack",
+		"clean": "rm -f ./index.js ./test/index.js",
     "lint": "eslint index-source.js",
-    "test": "karma start karma.conf.js",
+		"prepublish": "npm run lint && npm run build",
+    "test": "npm run build && mocha-phantomjs test/index.html",
     "watch": "babel -w -o index.js index-source.js"
   },
   "keywords": [],
@@ -33,5 +33,6 @@
   "peerDependencies": {
     "react": "^15.0.2",
     "react-addons-update": "^15.0.2"
-  }
+  },
+	"repository": "jrop/react-frame-layout"
 }
