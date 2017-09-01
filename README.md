@@ -1,5 +1,7 @@
 # react-frame-layout
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jrop/react-frame-layout.svg)](https://greenkeeper.io/)
+
 > Easily implement stackable layouts in React
 
 ## Installation
